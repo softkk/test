@@ -11,7 +11,7 @@ import (
 
 const APP_VERSION = "0.1"
 
-// The flag package provides a default help printer via -h switchs
+// The flag package provides a default help printer via -h switchss
 var versionFlag *bool = flag.Bool("v", false, "Print the version number.")
 
 type AdapterFactory func(s string) (string, int)
