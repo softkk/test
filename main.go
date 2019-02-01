@@ -22,7 +22,8 @@ func main() {
 	if *versionFlag {
 		fmt.Println("Version:", APP_VERSION)
 	}
-	test3()
+	// test3()
+	test_protobuf()
 
 	//
 }
