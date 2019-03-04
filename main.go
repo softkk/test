@@ -23,8 +23,8 @@ func main() {
 		fmt.Println("Version:", APP_VERSION)
 	}
 	// test3()
-	test_protobuf()
-
+	//test_protobuf()
+	tryit()
 	//
 }
 
@@ -100,4 +100,20 @@ func parseLogLine(line string) (string, time.Time) {
 		return logEntry[1], logTime
 	}
 	return "", logTime
+}
+
+//-----------------
+func tryit() {
+
+	type Article struct {
+		ArticleID      int
+		ArticleContent string
+	}
+
+	var a bool
+	var b bool = ""
+
+	fmt.Printf("Type: %T Value: %v\n", a, a)
+	fmt.Printf("Type: %T Value: %v\n", b, b)
+
 }
